@@ -11,20 +11,22 @@
 
 from selenium import webdriver
 
-# Specify the path to the chromedriver executable
 chromedriver_path = r'D:\NEW_W_ORDER\projects\Automation_with_python\automation_001\drivers\chromedriver-win64\chromedriver.exe'
 
-# Create ChromeOptions instance
+# Create an instance of ChromeOptions
 chrome_options = webdriver.ChromeOptions()
 
-# Set any desired options here, if needed
-# chrome_options.add_argument('--headless')
+# Add any desired options to chrome_options
+# For example, to run Chrome in headless mode:
+chrome_options.add_argument(chromedriver_path)
 
-# Specify the path to the chromedriver executable directly in the options
-chrome_options.binary_location = chromedriver_path
-
-# Create the WebDriver instance with the specified options
+# Specify the executable_path using the executable_path parameter directly
 driver = webdriver.Chrome(chrome_options)
 
 
-driver.get('https://opensource-demo.orangehrmlive.com/')
+
+
+
+
+
+
